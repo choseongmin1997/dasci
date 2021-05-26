@@ -10,7 +10,8 @@ function setShare() {
 
   Kakao.Link.sendDefault({
   objectType: 'feed',
-  content: {
+  content:
+  {
     title: shareTitle,
     description: shareDes,
     imageUrl: shareImage,
@@ -19,14 +20,13 @@ function setShare() {
       webUrl: shareURL,
     },
   },
-  buttons: [
-    {
+  buttons:
+  {
       title: '결과 확인하기',
       link: {
         mobileWebUrl: shareURL,
         webUrl: shareURL
-      },
-    };
-  ]
+      }
+    }
 });
 }

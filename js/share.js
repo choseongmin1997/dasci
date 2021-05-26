@@ -5,7 +5,7 @@ function setShare() {
   var resultAlt = resultImg.firstElementChild.alt;
   const shareTitle = '여행성향 확인하기';
   const shareDes = infoList[resultAlt].name;
-  const shareImage = url + 'img/image-' + resultAlt + '.jpg';
+  const shareImage = url + 'img/' + resultAlt + '.jpg';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
   Kakao.Link.sendDefault({

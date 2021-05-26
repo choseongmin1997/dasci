@@ -19,12 +19,12 @@ function setShare() {
         webUrl: shareURL,
       },
     },
-    buttons: {
+    buttons: [{
       title: '결과 확인하기',
       link: {
         mobileWebUrl: shareURL,
         webUrl: shareURL
       }
-    }
+    }]
   })
 }

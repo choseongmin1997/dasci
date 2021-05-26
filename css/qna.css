@@ -1,0 +1,49 @@
+#qna {
+  display: none;
+}
+
+.qBox {
+  font-family: 'Poor Story', cursive;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.answerList {
+  font-family: 'Poor Story', cursive;
+  background-color: #F9EBDE;
+  text-align: center;
+  border-radius: 5px;
+  display: block;
+  width: 80%;
+  border: 0px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.answerList:hover, .answerList:focus {
+  border: 2px solid #815854;
+  border-style: groove;
+}
+
+.status {
+  height: 1rem;
+  width: 80%;
+  background-color: #F9EBDE;
+  border-radius: 10px;
+}
+
+.statusBar {
+  height: 100%;
+  border-radius: 10px;
+  background: #d68bba;
+  background: #815854;
+}
+
+.statusNum {
+  font-family: 'Poor Story', cursive;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 18px;
+}

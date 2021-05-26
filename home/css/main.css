@@ -1,0 +1,78 @@
+html {height: 100%;}
+body {height: 100%;}
+
+
+header {
+  position: relative ;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding-top: 1rem;
+  text-align: right;
+
+}
+
+footer {
+  height: 30px;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 0;
+
+
+}
+
+ul.il {
+  margin-left: 20px;
+}
+
+.info{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #815854;
+  font-weight: 700;
+  text-decoration: none;
+  padding-right: 10%;
+}
+
+
+.title {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 42px;
+
+}
+.banner {
+  font-size: 14px;
+}
+
+.mainImg {
+  width: 100%;
+}
+
+#main {
+  position:relative;
+  width: 90%;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#mainexp {
+  position:relative;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+#startbutton {
+  background-color: #815854;
+  border-color: #815854;
+  width: 40%;
+  font-size: 18px;
+
+  filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.5));
+}

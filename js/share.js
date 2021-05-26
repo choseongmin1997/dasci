@@ -9,22 +9,24 @@ function setShare() {
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
   Kakao.Link.sendDefault({
-    objectType: 'feed',
-    content: {
-      title: shareTitle,
-      description: shareDes,
-      imageUrl: shareImage,
-      link: {
-        mobileWebUrl: shareURL,
-        webUrl: shareURL,
-      },
+  objectType: 'feed',
+  content: {
+    title: shareTitle,
+    description: shareDes,
+    imageUrl:
+      shareImage,
+    link: {
+      mobileWebUrl: shareURL,
+      webUrl: shareURL
     },
-    buttons: [{
-      title: '결과 확인하기',
+  },
+  buttons: [
+    {
+      title: shareTitle,
       link: {
         mobileWebUrl: shareURL,
-        webUrl: shareURL
-      }
-    }]
-  })
+      },
+    }
+  ]
+});
 }

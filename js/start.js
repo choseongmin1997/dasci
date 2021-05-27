@@ -118,6 +118,11 @@ function goNext(qIdx) {
   }
   console.log(qIdx);
   var q = document.querySelector('.qBox');
+  var qnaImg = document.getElementById('qnaImg');
+  var qimgURL = './img/q'+ (qIdx+1) + '.png';
+  qnaImg.src = qimgURL;
+  qnaImg.alt = qIdx;
+  qnaImg.classList.add("img-fluid");
   var a = document.querySelector('.aBox');
   q.innerHTML = qnaList[qIdx].q;
   for (let i in qnaList[qIdx].a) {

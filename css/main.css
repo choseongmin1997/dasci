@@ -53,6 +53,14 @@ ul.il {
   width: 100%;
 }
 
+.info-info {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #815854;
+  font-size: 10px;
+  text-decoration: none;
+  text-align: center;
+
+}
 #main {
   position:relative;
   width: 90%;

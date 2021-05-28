@@ -43,8 +43,11 @@ function calResult() {
 function setResult() {
   let point = calResult();
   const resultName = document.querySelector('.resultname');
+  const resultName2 = document.querySelector('.resultname2');
   resultName.innerHTML = infoList[point].name;
+  resultName2.innerHTML = infoList[point].name;
   var resultImg = document.createElement('img');
+
   const imgDiv = document.querySelector('#resultImg');
   var imgURL = 'img/'+ point + '.jpg';
   resultImg.src = imgURL;
@@ -63,10 +66,12 @@ function setResult() {
 
 }
 
+
 function goResult() {
   qna.style.WebkitAnimation = "fadeOut 0.5s";
   qna.style.Animation = "fadeOut 0.5s";
   setTimeout(() => {
+
     result.style.WebkitAnimation = "fadeIn 1s";
     result.style.Animation = "fadeIn 1s";
     setTimeout(() => {

@@ -108,16 +108,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="aBox col-lg-8 col-sm-10 col-md-8 mx-auto">
     </div>
   </section>
+
+
   <section id="result" class="mx-auto">
-    <div class="col-8 py-3 mx-auto">
-      <img src="img/resultTitle.svg" alt="resultTitle" class="img-fluid">
+
+    <div class="firstResult">
+      <div class="cloud1 py-3 pull-left">
+        <img src="img/cloud1.svg" alt="resultTitle" class="col-4 img-fluid pull-left">
+      </div>
+      <div class="col-8 py-3 mx-auto pb-5">
+        <img src="img/resultTitle.svg" alt="resultTitle" class="img-fluid">
+      </div>
+      <button type="button" class="btn2 btn-primary" onclick="js:showresult()">
+        <p class="resultname"></p>
+        결과 더보기</button>
     </div>
-    <div class="resultname col-12 py-5">
+
+
+
+    <div class="secondResult">
+    <div class="resultname2 col-12 pb-5 pt-3">
     </div>
     <div id="resultImg" class="resultImg img-fluid col-lg-10 col-md-8 col-sm-6">
     </div>
     <div class="resultinfo py-5">
     </div>
+
+
+
 
     <container class="Places col-sm-12 col-lg-8 pt-5 mx-auto">
       <div class="placesTitle">국내 여행지</div>
@@ -133,12 +151,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </container>
 
-    <container class="mx-auto py-5 my-3">
+    <container class="mx-auto py-3">
       <div class="py-3 pt-5">
-        <button type="button" class="btn btn-primary" onclick="js:setShare()">공유하기</button>
+        <button type="button" class="btn btn-primary" onclick="js:setShare()">
+          공유하기</button>
       </div>
       <div class="py-3">
         <button type="button" class="btn btn-primary" onclick="location.href='index.html'">다시하기</button>
+      </div>
       </div>
     </container>
   </section>
@@ -146,6 +166,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="./js/data.js" charset="utf-8"></script>
   <script src="./js/start.js" charset="utf-8"></script>
   <script src="./js/share.js" charset="utf-8"></script>
+  <script src="./js/showresult.js" charset="utf-8"></script>
+
+  </script>
 </body>
 <footer></footer>
 

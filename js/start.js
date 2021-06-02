@@ -82,11 +82,11 @@ function goResult() {
   }, 200);
   console.log(select);
   var resultString = select.join();
-  var resultValue = docuement.querySelectorAll(".btn2")
-  resultValue.id =  resultString;
-  resultValue.value = resultString;
   setResult();
-
+  var resultValue = document.querySelector(".btn2")
+  resultValue.alt = resultString;
+  resultValue.id = resultString;
+  resultValue.value = resultString;
 }
 
 

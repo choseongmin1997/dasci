@@ -82,7 +82,7 @@ function goResult() {
   }, 200);
   console.log(select);
   var resultString = select.join();
-  var resultValue = document.querySelector(".btn2");
+  var resultValue = docuement.querySelectorAll(".btn2")
   resultValue.id =  resultString;
   resultValue.value = resultString;
   setResult();

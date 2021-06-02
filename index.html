@@ -20,6 +20,7 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-197955607-1');
+  gtag('set', {'user_id': 'USER_ID'}); // 로그인한 User-ID를 사용하여 User-ID를 설정합니다.
 </script>
 
   <meta charset="UTF-8">
@@ -93,7 +94,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p id="mainexp" class="mt-4 mb-3">
         포스트 코로나 1년차,<br> 잊혀진 나의 여행방식 찾아보기
       </p>
-      <button id="startbutton" type="button" class="btn btn-primary mt-3" onclick="js:begin()">시작하기</button>
+      <button id="startbutton" type="button" target="fff" class="btn btn-primary mt-3" onclick="js:begin()">시작하기</button>
       <div class="info-info mx-auto py-3">
         테스트 클릭 정보는 구글 애널리틱스로 전송되며, <br>이외의 정보는 사용되지 않습니다.
       </div>
@@ -164,6 +165,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="py-3">
         <button type="button" class="btn btn-primary" onclick="location.href='index.html'">다시하기</button>
+      </div>
+      <div class="py-3">
+        <button id="copy" type="button" class="btn btn-primary" onclick="js:copyToClipboard()">링크 공유</button>
       </div>
       </div>
     </container>

@@ -1,5 +1,19 @@
 const url = 'https://mytravelerstyle.netlify.app/';
 
+function copyToClipboard() {
+  const t = document.createElement("textarea");
+  document.body.appendChild(t);
+  t.value = url;
+  t.select();
+  document.execCommand('copy');
+  document.body.removeChild(t);
+}
+function copy() {
+  copyToClipboard('Hello World');
+  console.log('Copied!');
+}
+
+
 function setShare() {
   var resultImg = document.querySelector('#resultImg');
   var resultAlt = resultImg.firstElementChild.alt;
